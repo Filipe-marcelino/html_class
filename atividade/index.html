@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelinha</title>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            height: 100px; width: 800px;
+            
+        }
+
+        thead{
+            background-color: rgb(159, 235, 209);
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+        <tr>
+            <th rowspan="2">mês</th>
+            <th colspan="4">Vendas</th>
+        </tr>
+        <tr>
+            <th>ProdutoA </th>
+            <th>ProdutoB </th>
+            <th>produtoC </th>
+            <th>TotalVendas</th>
+        </tr>
+        </thead>
+        <tbody style="text-align: center;">
+            <tr>
+                <td>Janeiro</td>
+                <td>250</td>
+                <td>300</td>
+                <td>150</td>
+                <td>700</td>
+            </tr>
+            
+            <tr>
+                <td>Fevereiro</td>
+                <td>400</td>
+                <td>500</td>
+                <td>300</td>
+                <td>1200</td>
+            </tr>
+
+            <tr>
+                
+                <td><b>Total</b></td>
+                <td><b>650</b></td>
+                <td><b>800</b></td>
+                <td><b>450</b></td>
+                <td><b>1900</b></td>
+                
+            </tr>
+        </tbody>
+
+        <tfoot>
+
+        </tfoot>
+        
+    </table>
+</body>
+</html>
