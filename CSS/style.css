@@ -1,0 +1,17 @@
+
+/*
+todos os paragrafos tem que ser azul e justificado, com fundo vermelho
+*/
+
+/*se o paragrafo tem muito conteudo ele tem que ter fundo preto e texto branco*/
+
+.paragrafo{
+    color: blue;
+    background-color: red;
+    text-align: justify;
+}
+
+.enfase{
+    color: white;
+    background-color: black;
+}
