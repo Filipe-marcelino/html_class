@@ -1,0 +1,37 @@
+
+/*tipo de seletores
+
+h1 {
+    
+    
+    color: blue;
+}
+
+h2 {
+    color: red;
+}
+
+
+/*Esse sobrescreve o primeiro, e o da linha de h2 sobrescreve ambos
+h2 {
+    color: greenyellow;
+}
+
+h3{
+    color: blue;
+}*/
+
+h1, h2, h3, p {
+    color: blue;
+    background-color: antiquewhite;
+}
+
+/*
+p {
+    color: blue;
+}*/
+
+
+*{
+    color: blue;
+}
