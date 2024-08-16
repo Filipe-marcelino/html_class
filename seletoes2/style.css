@@ -1,0 +1,16 @@
+/*seletor de classe*/
+
+/*seletor de classe subsecao aplicado em h2*/
+
+
+/*h2.subsecao {
+    color: blue;
+}*/
+
+h2.subsecao {
+    color: crimson;
+}
+
+.subsecao.sublinhado{
+    text-decoration: underline;
+}
