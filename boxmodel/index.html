@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 01</title>
+    <style>
+
+        * {
+            /*box-sizing: content-box; é o padrão*/
+            box-sizing: border-box;
+            /*Resumo dos borders, o padrão vai pegar um paragrafo que ocupa 20px e se adicionar uma borda com 10px o elemento tera 30px
+            Se usar o border-box o paragrafo com 20px quando adicionar a borda com 10px, o paragrafo vai ficar com 10px pra tudo somar 20px*/
+            margin: 0;
+            
+        }
+        p{
+            text-align: center;
+            border-bottom: 1px solid black;
+            background-color: lightgrey;
+            height: 40px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        p > a{
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <p>Aprenda desenvolvimento front-end com 30% de desconto no <a href="">scrimba</a> - Oferta com tempo limitado</p>
+</body>
+</html>
