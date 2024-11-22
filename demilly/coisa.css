@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+}
+
+.main{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid black;
+    height: 50px;
+    width: 100%;
+}
+
+.content{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    background-color: lightyellow;
+    height: 300px;
+    width: 300px;
+    border-radius: 25px;
+    padding-left: 20px;
+}
+
+.sidebar > a{
+    text-decoration: none;
+    padding: 20px;
+}
