@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            border: 0;
+            padding: 0;
+        }
+
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(190, 180, 180);
+            background-image: url(download.jfif);
+            background-size: cover;
+        }
+
+        .wrapper{
+            display: flex;
+            height: 100%;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            flex: 0 1 200px;
+            width: 400px;
+            /*flex-basis: 200px;*/
+            /*height: 200px;*/
+            background-color: rgba(255, 255, 255, 0.479);
+            border-radius: 10px;
+
+            position: relative;
+        }
+
+        /*pseudo-elemento*/
+        .card::before{
+            content: 'CARTAO DE ALAN';
+            border: 1px solid black;
+            position: absolute;
+            bottom: -30px;
+            left: 100px;
+            background-color: rgba(255, 255, 255, 0.479);
+            padding: 5px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            width: 200px;
+        }
+
+        .card:hover::after{
+            content: 'CARTAO DE ALAN';
+            border: 1px solid black;
+            position: absolute;
+            top: -30px;
+            left: 100px;
+            background-color: rgba(255, 255, 255, 0.479);
+            padding: 5px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            width: 200px;
+        }
+
+        /*pseudo-classe*/
+        .card:hover{
+            background-color: rgba(0, 0, 0, 0.418);
+        }
+
+        @media screen and (max-width: 400px){
+            .card::before{
+                display: none;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <div class="card">
+            <h1 class="header">
+                cartão de Alan
+            </h1>
+            <div class="card-boy">
+                Isso foi confuso, mas deu certo. 'Erick, você está nas portas da morte.'
+            </div>
+            <div class="card-footer">
+                <a href="">visitar</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
